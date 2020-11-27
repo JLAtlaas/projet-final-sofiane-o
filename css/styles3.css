@@ -1,0 +1,46 @@
+*{
+  margin: 0px;
+}
+
+.title{ /* titre du recueil */
+  text-align: center;
+  font-size: 30px;
+  color: #3C9BFF;
+  margin-top: 10px;
+}
+
+.title-2{ /* titre du poème */
+  color: #9E56FF;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.paragraphe-1{ /* 1er paragraphe */
+  margin-left: 20px; /* espace de 20px à gauche */
+  margin-top: 20px; /* espace de 20px en haut */
+  color: green; /* couleur du texte en vert */
+}
+
+.paragraphe-2{ /* 2eme paragraphe */
+  margin-left: 20px;
+  margin-top: 20px;
+  color: red; /* couleur du texte en rouge */
+}
+
+.paragraphe-3{ /* 3eme paragraphe */
+  margin-left: 20px;
+  margin-top: 20px;
+  color: green;
+}
+
+.paragraphe-4{ /* 4eme paragraphe */
+  margin-left: 20px;
+  margin-top: 20px;
+  color: red;
+}
+
+.name{ /* nom de l'auteur */
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #000; /* couleur du texte en noir */
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/83f4286022.js" crossorigin="anonymous"></script>
+    <title>Calcul</title>
+
+</head>
+
+<body>
+
+
+    <header class="header">
+        <nav class="navigation">
+            <h1>Regroupement projets</h1>
+            <a class="accueil" href="file:///E:/code/Lycée/Regroupement%20des%20projets/index.html"><i class="fas fa-home"></i> Accueil</a>
+        </nav>
+    </header>
+
+
+    <p class="titre">Calcul</p>
+    <div class="container">
+
+        <form>
+            <input type="text" class="val1" placeholder="longueur du premier côté">
+            <input type="text" class="val2" placeholder="longueur du deuxième côté">
+            <button type="submit">Calculer</button>
+        </form>
+    </div>
+
+    <footer>
+        <h3>© 2020 | Sofiane .O</h3>
+    </footer>
+
+</body>
+<script>
+    const container = document.querySelector('.container');
+    const titre = document.querySelector('.titre');
+    const form = document.querySelector('form');
+    const input1 = document.querySelector('.val1');
+    const input2 = document.querySelector('.val2');
+
+
+    form.addEventListener('submit', event => {
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (!isNaN(input1.value) || !isNaN(input2.value)) {
+            let result1 = input1.value * input1.value;
+            let result2 = input2.value * input2.value;
+
+            let total = result1 + result2;
+
+            let textp = document.createTextNode('Le resultat est : ' + Math.sqrt(total));
+
+            input1.value = " ";
+            input2.value = " ";
+            titre.innerHTML = " ";
+            titre.append(textp);
+        } else {
+            window.alert('Utilisez des chiffres uniquement !');
+        }
+
+
+
+        // window.alert(Math.sqrt(total));
+    })
+</script>
+
+
+</html>

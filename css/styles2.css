@@ -1,0 +1,34 @@
+body{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 1.5em;
+}
+
+h2{
+  font-size: 1.3em;
+}
+
+p,ul,ol{
+  font-size: 1.1em;
+}
+
+.expe{
+  float: right;
+  width: 100%;
+}
+
+.txt-expe{
+    float: right;
+}
+
+.dest{
+  float: left;
+  width: 100%;
+}
+
+.txt-indent{
+  margin-left:50px;
+}
